@@ -552,7 +552,8 @@ ul li{
         display: block;
     }
     .plugTxt{
-        margin: 2rem 5rem;
+        width: 75%;
+        margin-left: 12%;
     }
     .plugTxt p{
         font-size: 22px;
@@ -560,6 +561,7 @@ ul li{
     }
     .blueSection .plugImg{
         margin-top: -5rem;
+        margin-left: 3%;
     }
     .ping{
         width: 80%;
