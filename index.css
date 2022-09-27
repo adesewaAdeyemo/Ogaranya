@@ -499,14 +499,20 @@ ul li{
     }
     @keyframes textslide{
         0%{right:-400px;}
-        05%{right: 0px}
-        60%{right: 0px}
-        65%{right: 800px}
-        100%{right: 800px}
+        05%{right: -5px}
+        60%{right: -5px}
+        65%{right: 845px}
+        100%{right: 845px}
     }
     .row{
         height: 70vh;
     }
+    #arrow{
+        position: absolute;
+        left: 30rem;
+        margin-top: -30px;
+    }
+    
     .logo{
         height: 30px;
     }
@@ -565,6 +571,7 @@ ul li{
     .blueSection .plugImg{
         margin-top: -5rem;
         margin-left: 3%;
+        width: 110%;
     }
     .ping{
         width: 80%;
