@@ -69,15 +69,15 @@ for (let i = 0; i < 4; i++) {
     num = Math.floor(Math.random() * 10);
     invitation_code.push(num);
 }
-console.log(invitation_code)
+// console.log(invitation_code)
 // invitation_code = ['1234', '3854', '0000', '3892', '2394', '0772'];
 let invite = document.getElementById('invite');
 let inpInvite = document.getElementById('inpInvite')
 invite.addEventListener('click', check);
 function check(){
-    console.log(inpInvite.value)
-    console.log(inpInvite.value in invitation_code)
-    console.log(invitation_code)
+    // console.log(inpInvite.value)
+    // console.log(inpInvite.value in invitation_code)
+    // console.log(invitation_code)
     if (invitation_code.includes((inpInvite.value).toString())){
         alert('You are lucky !, an invitation code will be sent to your email...');
     }
