@@ -1,0 +1,14 @@
+.grid_container{
+     display:grid;
+     grid-template-columns :1fr 1fr 1fr;
+     grid-template-columns :12px repeat(6, 1fr) 20px;
+     grid-template-rows: minmax(100px, auto);
+     column-gap: 10px;
+     row-gap: 20px;
+     gap: 20px, 10px;
+     /* 1st-12px, 6-1fr   last-20px  */
+     height: ;
+     border: ;
+     c
+
+}
