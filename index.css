@@ -616,20 +616,32 @@ ul li{
         0%{right:-400px;}
         05%{right: -5px}
         60%{right: -5px}
-        65%{right: 625px}
-        100%{right: 625px}
+        65%{right: 700px}
+        100%{right: 700px}
     }   
     h1{
         font-size: 30px;
     } 
-
+    .slide{
+        width: 100%;
+        overflow: visible;
+    }
+    .div{
+        width: 0;
+    }
     .slide form label{
         font-size: 11px;
     }
     .slide form input[type="text"]{
       width: 50%;
     }
+      .slide form .inp{
+        width: 80%;
+      }
+      
+
     .row{
+        display: block;
         height: 70vh;
     }
     #arrow{
@@ -647,7 +659,7 @@ ul li{
     }
     .blueSection .plugImg{
         margin-left: -5%;
-        width: 120%;
+        width: 110%;
     }
     .ping, .custom, .footer, .foot, .plugTxt, .custom_service p, .whiteSection iframe,section .plugText{
         width: 90%;
