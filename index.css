@@ -646,8 +646,8 @@ ul li{
         padding: 0;
     }
     .blueSection .plugImg{
-        margin-left: 5%;
-        width: 100%;
+        margin-left: -5%;
+        width: 120%;
     }
     .ping, .custom, .footer, .foot, .plugTxt, .custom_service p, .whiteSection iframe,section .plugText{
         width: 90%;
@@ -655,5 +655,11 @@ ul li{
     }
     section .plugText{
         margin-top: -4rem;
+    }
+    .custom .customers{
+        width: 90%;
+    }
+    #big{
+        width: 70%;
     }
 }
