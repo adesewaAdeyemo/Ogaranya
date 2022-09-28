@@ -78,11 +78,14 @@ function check(){
     // console.log(inpInvite.value)
     // console.log(inpInvite.value in invitation_code)
     // console.log(invitation_code)
+    // if (invitation_code.includes((inpInvite.value).toString())){
+    //     alert('You are lucky !, an invitation code will be sent to your email...');
+    // }
     if (invitation_code.includes((inpInvite.value).toString())){
         alert('You are lucky !, an invitation code will be sent to your email...');
     }
     else{
-        alert(`Oooops, Try again later! Merchant code is ${invitation_code}`);
+        alert(`Oooops, Try again later!`);
     }
 }
 
