@@ -514,7 +514,7 @@ ul li{
         100%{right: 820px}
     }
     .row{
-        height: 70vh;
+        height: 80vh;
     }
     #arrow{
         position: absolute;
@@ -536,10 +536,6 @@ ul li{
     section{
         margin:0 1rem 3rem 1rem;
 
-    }
-    .whiteSection iframe{
-        max-width: 80%;
-        margin-left: 10%;
     }
     .blueSection{
         margin-top: -3rem;
@@ -579,21 +575,13 @@ ul li{
     }
     .blueSection .plugImg{
         margin-top: -5rem;
-        margin-left: 10%;
-        width: 80%;
     }
-    .ping{
+    .ping, .custom, .foot, .whiteSection iframe, section .plugText,.blueSection .plugImg{
         width: 80%;
         margin-left: 10%;
     }
     section .plugText{
         margin-top: -4rem;
-        margin-left: 10%;
-        width: 80%;
-    }
-    .custom{
-        width: 80%;
-        margin-left: 10%;
     }
     .footer{
         display: block;
@@ -604,9 +592,7 @@ ul li{
     
     }
     .foot{
-        margin-left: 10%;
         margin-top: 8rem;
-        width: 80%;
     }
     .index{
         z-index: 1;
@@ -644,6 +630,25 @@ ul li{
       width: 50%;
     }
     .row{
-        height: 60vh;
+        height: 70vh;
+    }
+
+    .blueSection section{
+        margin: 6%;
+    }
+    .custom_service p{
+        width: 100%;
+        padding: 0;
+    }
+    .blueSection .plugImg{
+        margin-left: 5%;
+        width: 100%;
+    }
+    .ping, .custom, .footer, .foot, .plugTxt, .custom_service p, .whiteSection iframe,section .plugText{
+        width: 90%;
+        margin-left: 5%;
+    }
+    section .plugText{
+        margin-top: -4rem;
     }
 }
