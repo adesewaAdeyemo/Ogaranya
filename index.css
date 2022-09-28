@@ -632,6 +632,11 @@ ul li{
     .row{
         height: 70vh;
     }
+    #arrow{
+        position: absolute;
+        left: 25rem;
+
+    }
 
     .blueSection section{
         margin: 6%;
