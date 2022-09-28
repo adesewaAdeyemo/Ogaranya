@@ -3,19 +3,6 @@ let langUl = document.querySelector('.langUl');
 let product = document.querySelector('#product');
 let productUl = document.querySelector('.productUl');
 
-
-addEventListener('install', (event) => {
-    const preCache = async () => {
-      const cache = await caches.open('static-v1');
-      return cache.addAll([
-        '/',
-        '/about/',
-        '/static/styles.css'
-      ]);
-    };
-    event.waitUntil(preCache());
-  });
-
 var count = 0;
 
 lang.addEventListener('click', langList)
@@ -64,13 +51,13 @@ btn.addEventListener('submit', function(e){
     e.preventDefault();
 })
 
-// invitation_code = [];
-// for (let i = 0; i < 4; i++) {
-//     num = Math.floor(Math.random() * 10);
-//     invitation_code.push(num);
-// }
+invitation_code = [];
+for (let i = 0; i < 4; i++) {
+    num = Math.floor(Math.random() * 10);
+    invitation_code.push(num);
+}
 // console.log(invitation_code)
-invitation_code = ['1234', '3854', '0000', '3892', '2394', '0772'];
+// invitation_code = ['1334', '3854', '0450', '3892', '2394', '0772'];
 let invite = document.getElementById('invite');
 let inpInvite = document.getElementById('inpInvite')
 invite.addEventListener('click', check);
@@ -78,12 +65,12 @@ function check(){
     // console.log(inpInvite.value)
     // console.log(inpInvite.value in invitation_code)
     // console.log(invitation_code)
-    // if (invitation_code.includes((inpInvite.value).toString())){
-    //     alert('You are lucky !, an invitation code will be sent to your email...');
-    // }
     if (invitation_code.includes((inpInvite.value).toString())){
         alert('You are lucky !, an invitation code will be sent to your email...');
     }
+    // if (invitation_code.includes((inpInvite.value).toString())){
+    //     alert('You are lucky !, an invitation code will be sent to your email...');
+    // }
     else{
         alert(`Oooops, Try again later!`);
     }
