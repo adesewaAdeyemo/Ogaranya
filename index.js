@@ -85,3 +85,21 @@ function check(){
         alert(`Oooops, Try again later! Merchant code is ${invitation_code}`);
     }
 }
+
+let menuList = document.querySelector('.menuList')
+let menu = document.querySelector('.menu');
+let navigation = document.querySelector('.navigation')
+
+menu.addEventListener('click', displayNav);
+function displayNav(){
+    count+=1;
+    console.log(count);
+    if (count%2 != 0){
+        navigation.style.display = 'block'
+        menu.src = 'images/cancel1.png'
+        productUl.classList.add('index')
+    }else{
+        navigation.style.display = 'none'
+        menu.src = 'images/menu.png'
+    }
+}

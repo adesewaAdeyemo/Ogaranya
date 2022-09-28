@@ -249,7 +249,8 @@ h1{
     z-index: 1;
 }
 .langUl li{
-    padding: 5px;
+    padding:0 5px;
+    line-height: 20px;
 }
 .langUl li:hover{
     background-color: #00AEEF;
@@ -476,12 +477,20 @@ ul li{
         display:inline-block;
         text-decoration: none;
         position: absolute;
-        left: 12rem;
+        left: 10rem;
         color: #fff;
     }
     .menu{
-        max-height: 15px;
-        align-self: center;
+        display: block;
+        max-height: 20px;
+    }
+    .navigation{
+        margin-top: 3rem;
+        text-align: center;
+        vertical-align: center;
+    }
+    .navigation li{
+        padding: 15px;
     }
     #div, .space{
         display: none;
@@ -501,8 +510,8 @@ ul li{
         0%{right:-400px;}
         05%{right: -5px}
         60%{right: -5px}
-        65%{right: 845px}
-        100%{right: 845px}
+        65%{right: 820px}
+        100%{right: 820px}
     }
     .row{
         height: 70vh;
@@ -570,8 +579,8 @@ ul li{
     }
     .blueSection .plugImg{
         margin-top: -5rem;
-        margin-left: 3%;
-        width: 110%;
+        margin-left: 10%;
+        width: 80%;
     }
     .ping{
         width: 80%;
@@ -599,10 +608,42 @@ ul li{
         margin-top: 8rem;
         width: 80%;
     }
-    
+    .index{
+        z-index: 1;
+        color: #fff;
+        display: block;
+        background-color: #273765;
+        border: none;
+        position: relative;
 
+    }
+    .productUl li{
+        color: #fff;
+    }
+    .langUl li{
+        line-height: 0px;
+    }
+}
 
-    
-    
-    
+@media screen and (max-width: 576px) {
+    @keyframes textslide{
+        0%{right:-400px;}
+        05%{right: -5px}
+        60%{right: -5px}
+        65%{right: 625px}
+        100%{right: 625px}
+    }   
+    h1{
+        font-size: 30px;
+    } 
+
+    .slide form label{
+        font-size: 11px;
+    }
+    .slide form input[type="text"]{
+      width: 50%;
+    }
+    .row{
+        height: 60vh;
+    }
 }
