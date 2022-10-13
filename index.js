@@ -3,6 +3,18 @@ let langUl = document.querySelector('.langUl');
 let product = document.querySelector('#product');
 let productUl = document.querySelector('.productUl');
 
+// addEventListener('install', (event) => {
+//     const preCache = async () => {
+//       const cache = await caches.open('static-v1');
+//       return cache.addAll([
+//         '/',
+//         '/about/',
+//         '/static/styles.css'
+//       ]);
+//     };
+//     event.waitUntil(preCache());
+//   });
+
 var count = 0;
 
 lang.addEventListener('click', langList)
